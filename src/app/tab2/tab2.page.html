@@ -1,0 +1,228 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title text-center>
+      Vetevo Gmbh - test
+    </ion-title>
+    <ion-buttons slot="secondary">
+      <ion-button>
+        <ion-icon slot="icon-only" name="contact"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid style="height: 100%;">
+    <mat-vertical-stepper style="margin-left: -20px;">
+      <mat-step    [completed]="false" label="Confirm Order" state="ok" fxFlex="100" style=" padding-bottom: 0 px ;">
+        <ng-template matStepLabel>
+          <p class="title">
+            Probenbox aktiviert
+          </p>
+        </ng-template>
+        <p class="paragraphe-style">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
+        </p>
+        <div class="timeline-marker">
+          <ion-icon name="information" class="icon-style"></ion-icon>
+        </div>
+        <div class="timeline-content">
+          <p class=" timeline-title"> Lorem Ipsum is simply dummy text of the printing and typesetting industry:</p>
+          <ion-grid>
+            <ion-row>
+              <ion-col size="3">
+                <ion-icon name="clock" size="large"></ion-icon>
+              </ion-col>
+              <ion-col>
+                <p class="paragraphe-style" style="margin-top: -10px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col size="3">
+                <ion-icon name="color-wand" size="large"></ion-icon>
+              </ion-col>
+              <ion-col>
+                <p class="paragraphe-style" style="margin-top: -10px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col size="3">
+                <ion-icon name="happy" size="large"></ion-icon>
+              </ion-col>
+              <ion-col>
+                <p class="paragraphe-style" style="margin-top: -10px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+        <div class="timeline-marker">
+          <ion-icon name="information" class="icon-style"></ion-icon>
+        </div>
+        <div class="timeline-content">
+          <p class="  timeline-title">Lorem Ipsum is simply dummy text of the printing and typesetting industry?</p>
+          <mat-card>
+            <mat-card-subtitle>
+              <b>Lorem Ipsum has been the industry</b>
+            </mat-card-subtitle>
+            <mat-card-content>
+              <ion-row>
+                <ion-col style="margin-top: -10px;">
+                  <p class="paragraphe-style">
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+                  </p>
+                </ion-col>
+                <ion-col size="1">
+                  <ion-icon name="arrow-dropright" style="margin-top: 10px;font-size:25px;"></ion-icon>
+                </ion-col>
+              </ion-row>
+            </mat-card-content>
+
+            <mat-card-actions style="margin-top: -30px;">
+              <a mat-button>Learn more</a>
+            </mat-card-actions>
+          </mat-card>
+          <mat-card style="margin-top: 20px;">
+            <mat-card-subtitle>
+              <b>Lorem Ipsum has been the industry</b>
+            </mat-card-subtitle>
+            <mat-card-content>
+              <ion-row>
+                <ion-col style="margin-top: -10px;">
+                  <p class="paragraphe-style">
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+                  </p>
+                </ion-col>
+                <ion-col size="1">
+                  <ion-icon name="arrow-dropright" style="margin-top: 10px;font-size:25px;"></ion-icon>
+                </ion-col>
+              </ion-row>
+            </mat-card-content>
+
+            <mat-card-actions style="margin-top: -30px;">
+              <a mat-button>Learn more</a>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </mat-step>
+      <mat-step state="ok" style="    box-shadow: 58px -26px 52px #fff;">
+        <ng-template matStepLabel>
+          <p class="title">
+            Probenbox im Labor
+          </p>
+        </ng-template>
+        <p class="paragraphe-style">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
+        </p>
+        <div class="timeline-marker">
+          <ion-icon name="information" class="icon-style"></ion-icon>
+        </div>
+        <p class=" timeline-title"> Lorem Ipsum is simply dummy text of the printing and typesetting industry:</p>
+        <p class="paragraphe-style">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
+        </p>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="6">
+              <mat-form-field appearance="outline" style="width: 80%;">
+                <mat-label>Kg</mat-label>
+                <input matInput placeholder="dd/mm/yy">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              </mat-form-field>
+            </ion-col>
+            <ion-col size="6">
+              <mat-form-field appearance="outline" style="width: 80%;">
+                <mat-label>Outline form field</mat-label>
+                <input matInput placeholder="dd/mm/yy">
+                <mat-icon matSuffix>calendar_today</mat-icon>
+              </mat-form-field>
+            </ion-col>
+          </ion-row>
+          <ion-button expand="block" style="margin-top: -20px;">Hinteriegen</ion-button>
+        </ion-grid>
+
+        <mat-card style="margin-top: 20px;">
+          <mat-card-subtitle>
+            <b>Lorem Ipsum has been the industry</b>
+          </mat-card-subtitle>
+          <mat-card-content>
+            <ion-row>
+              <ion-col style="margin-top: -10px;">
+                <p class="paragraphe-style">
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+                </p>
+              </ion-col>
+              <ion-col size="1">
+                <ion-icon name="arrow-dropright" style="margin-top: 10px;font-size:25px;"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </mat-card-content>
+
+          <mat-card-actions style="margin-top: -30px;">
+            <a mat-button>Learn more</a>
+          </mat-card-actions>
+        </mat-card>
+        <mat-card style="margin-top: 20px;">
+          <mat-card-subtitle>
+            <b>Lorem Ipsum has been the industry</b>
+          </mat-card-subtitle>
+          <mat-card-content>
+            <ion-row>
+              <ion-col style="margin-top: -10px;">
+                <p class="paragraphe-style">
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+                </p>
+              </ion-col>
+              <ion-col size="1">
+                <ion-icon name="arrow-dropright" style="margin-top: 10px;font-size:25px;"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </mat-card-content>
+
+          <mat-card-actions style="margin-top: -30px;">
+            <a mat-button>Learn more</a>
+          </mat-card-actions>
+        </mat-card>
+        <mat-card style="margin-top: 20px;">
+          <mat-card-subtitle>
+            <b>Lorem Ipsum has been the industry</b>
+          </mat-card-subtitle>
+          <mat-card-content>
+            <ion-row>
+              <ion-col style="margin-top: -10px;">
+                <p class="paragraphe-style">
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+                </p>
+              </ion-col>
+              <ion-col size="1">
+                <ion-icon name="arrow-dropright" style="margin-top: 10px;font-size:25px;"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </mat-card-content>
+
+          <mat-card-actions style="margin-top: -30px;">
+            <a mat-button>Learn more</a>
+          </mat-card-actions>
+        </mat-card>
+      </mat-step>
+      <mat-step label="Step 2" state="ok">
+        <ng-template matStepLabel style="    box-shadow: 58px -26px 52px #fff;">here we go </ng-template>
+        <mat-card>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+          text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+          book
+        </mat-card>
+      </mat-step>
+      <ng-template matStepperIcon="ok">
+        <mat-icon>view_headline</mat-icon>
+      </ng-template>
+
+    </mat-vertical-stepper>
+
+  </ion-grid>
+
+</ion-content>

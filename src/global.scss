@@ -1,0 +1,28 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+@import '~@ionic/angular/css/display.css';
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+.mat-stepper-vertical-line::before {
+    top: -25px !important;
+    bottom: -25px !important;
+    left: -1px !important;
+    border-left-width: 5px !important;
+    border-radius: 10px;
+}
+
+.mat-stepper-vertical-line::before {
+    border-left-color: #009688;
+}
+.mat-step-header .mat-step-icon {
+    background-color:  #009688;
+    color: #fff;
+}
