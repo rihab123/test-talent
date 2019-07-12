@@ -1,13 +1,58 @@
-$primary-color: #FF6B6B;
-$primary-color-hover: scale-color($primary-color, $lightness: 32%);
+$marker-color: #FF3E81;
+$marker-color-hover: scale-color($marker-color, $lightness: 32%);
 
-.timeline-marker {
 
+/*******************Tab Titel ******************/
+
+.profile-icon {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    background: #F4F4F4;
+    color: #484848;
+    text-align: center;
+    font: 18px 'Montserrat', bold;
+}
+
+.tab-titel {
+    font: 22px 'Montserrat', 'semiBold';
+}
+
+
+/***************Stepper*****************/
+
+.stepper{
+    margin-left: -20px;
+}
+
+/******* Step 1 ********/
+.step {
+ padding-bottom: 0px ;
+   
+}
+.title {
+    font: 16px 'Montserrat', 'semiBold';
+    color: #484848;
+    margin-top: 15px;
+}
+.mini-titel {
+    font: 14px 'Montserrat', 'Regular';
+    color: #979797 ;
+}
+
+.paragraphe-style {
+    font: 16px 'Montserrat', 'Regular';
+    color: #484848;
+    margin-top: 0px;
+}
+
+.stepper-marker{
     width: 20px;
     margin-left: -35px;
-
+    margin-top: 10px;
     &:before {
-        background: $primary-color;
+        background: $marker-color;
         border: 3px solid transparent;
         border-radius: 100%;
         content: "";
@@ -18,27 +63,74 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
     }
 
     .icon-style {
-        color: whitesmoke;
-        margin-top: -2px;
-        margin-left: -3px;
-        font-size: 30px;
+        color: #FFFFFF;
+        margin: 0px;
+        font-size: 25px;
+        position: absolute;
     }
 }
 
-.title {
-    font-size: larger;
-    font-weight: bold;
-}
-
-.timeline-title {
+.stepper-title {
     left: auto;
-    margin-top: -20px;
-    font-size: smaller;
-    font-weight: normal;
+    font: 16px 'Montserrat', 'semiBold';
+    margin-top: 0px;
 }
 
-.paragraphe-style {
-    font-size: 12px;
-    font-weight: 200;
-    color: #383838;
+.row-align{
+    margin-top: -10px;
+    .paragraphe-style {
+        margin-left: -25px;
+    }
+  
 }
+
+.icons {
+    font-size: 35px;
+    text-align: center;
+    color: #979797;
+    padding: 10px;
+    margin-left: -30px;
+ 
+}
+
+.card {
+    margin-bottom: 30px ;
+    .card-titel{
+        color: #484848;
+        font: 16px 'Montserrat', 'semiBold';
+    }
+
+    .card-content{
+        color: #979797;
+        font: 14px 'Montserrat', 'Regular';
+        margin-top: 0px;
+    }
+
+    .card-icon {
+        color: #979797;
+        ion-icon {
+            margin-top: 10px;
+            font-size:25px;
+        }
+    }
+
+    .card-action {
+        margin-top: -40px;
+        color: #49B2AE ;
+        a {
+            font: 14px 'Montserrat', bold;
+            text-align: left;
+        }
+    }
+}
+
+/**** Step 2 ****/
+.input-style {
+    width: 100%;
+    margin-bottom: 0px;
+}
+.input-icons {
+    color: #979797;
+}
+
+/*****************/

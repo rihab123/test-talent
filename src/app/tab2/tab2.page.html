@@ -5,224 +5,287 @@
         <ion-icon name="arrow-back"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title text-center>
-      Vetevo Gmbh - test
+    <ion-title text-center class="tab-titel">
+      Wurmtest
     </ion-title>
     <ion-buttons slot="secondary">
-      <ion-button>
-        <ion-icon slot="icon-only" name="contact"></ion-icon>
-      </ion-button>
-    </ion-buttons>
+        <ion-button>
+            <div class="profile-icon">R</div>
+        </ion-button>
+      </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-grid style="height: 100%;">
-    <mat-vertical-stepper style="margin-left: -20px;">
-      <mat-step    [completed]="false" label="Confirm Order" state="ok" fxFlex="100" style=" padding-bottom: 0 px ;">
+  <ion-grid id="screen">
+    <!-- Material vertical stepper -->
+    <mat-vertical-stepper class="stepper">
+      <!--Step1-->
+      <mat-step state="ok" fxFlex="100" class="step">
         <ng-template matStepLabel>
-          <p class="title">
-            Probenbox aktiviert
-          </p>
+          <div class="title">
+            Sammeln
+          </div>
+          <div class="mini-titel">
+            2. Mai 2019
+          </div>
         </ng-template>
-        <p class="paragraphe-style">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
-        </p>
-        <div class="timeline-marker">
-          <ion-icon name="information" class="icon-style"></ion-icon>
-        </div>
-        <div class="timeline-content">
-          <p class=" timeline-title"> Lorem Ipsum is simply dummy text of the printing and typesetting industry:</p>
-          <ion-grid>
-            <ion-row>
-              <ion-col size="3">
-                <ion-icon name="clock" size="large"></ion-icon>
-              </ion-col>
-              <ion-col>
-                <p class="paragraphe-style" style="margin-top: -10px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              </ion-col>
-            </ion-row>
-            <ion-row>
-              <ion-col size="3">
-                <ion-icon name="color-wand" size="large"></ion-icon>
-              </ion-col>
-              <ion-col>
-                <p class="paragraphe-style" style="margin-top: -10px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              </ion-col>
-            </ion-row>
-            <ion-row>
-              <ion-col size="3">
-                <ion-icon name="happy" size="large"></ion-icon>
-              </ion-col>
-              <ion-col>
-                <p class="paragraphe-style" style="margin-top: -10px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        </div>
-        <div class="timeline-marker">
-          <ion-icon name="information" class="icon-style"></ion-icon>
-        </div>
-        <div class="timeline-content">
-          <p class="  timeline-title">Lorem Ipsum is simply dummy text of the printing and typesetting industry?</p>
-          <mat-card>
-            <mat-card-subtitle>
-              <b>Lorem Ipsum has been the industry</b>
-            </mat-card-subtitle>
-            <mat-card-content>
-              <ion-row>
-                <ion-col style="margin-top: -10px;">
+     <div class="step-content">
+        <div class="paragraphe-style">
+            Du hast Probenbox WTBH0110ALLK aktiviert und mit Rocco verknüpft.
+          </div>
+          <div class="stepper-marker">
+            <ion-icon name="star" class="icon-style"></ion-icon>
+          </div>
+          <div class="stepper-content">
+            <p class="stepper-title">Unsere Tipps zum Sammeln</p>
+            <ion-grid>
+              <ion-row class="row-align">
+                <ion-col size="2">
+                  <ion-icon name="clock" class="icons"></ion-icon>
+                </ion-col>
+                <ion-col>
                   <p class="paragraphe-style">
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+                    Sammle an drei Tagen nacheinander. Jede Probe sollte mindestens walnussgroß sein.
                   </p>
                 </ion-col>
-                <ion-col size="1">
-                  <ion-icon name="arrow-dropright" style="margin-top: 10px;font-size:25px;"></ion-icon>
-                </ion-col>
               </ion-row>
-            </mat-card-content>
-
-            <mat-card-actions style="margin-top: -30px;">
-              <a mat-button>Learn more</a>
-            </mat-card-actions>
-          </mat-card>
-          <mat-card style="margin-top: 20px;">
-            <mat-card-subtitle>
-              <b>Lorem Ipsum has been the industry</b>
-            </mat-card-subtitle>
-            <mat-card-content>
-              <ion-row>
-                <ion-col style="margin-top: -10px;">
+              <ion-row class="row-align">
+                <ion-col size="2">
+                  <ion-icon name="color-wand" class="icons"></ion-icon>
+                </ion-col>
+                <ion-col>
                   <p class="paragraphe-style">
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+                    Lagere die Proben gekühlt bei 2 - 8°C in der Probenbox bis du alle drei Proben gesammelt hast.
                   </p>
                 </ion-col>
-                <ion-col size="1">
-                  <ion-icon name="arrow-dropright" style="margin-top: 10px;font-size:25px;"></ion-icon>
+              </ion-row>
+              <ion-row class="row-align">
+                <ion-col size="2">
+                  <ion-icon name="happy" class="icons"></ion-icon>
+                </ion-col>
+                <ion-col>
+                  <p class="paragraphe-style">
+                    Klebe das Rücksendeetikett auf die Probenbox und wirf sie in einen Briefkasten.
+                  </p>
                 </ion-col>
               </ion-row>
-            </mat-card-content>
+            </ion-grid>
+          </div>
+          <div class="stepper-marker">
+            <ion-icon name="star" class="icon-style"></ion-icon>
+          </div>
+          <div class="stepper-content">
+            <p class="stepper-title">Lorem Ipsum is simply dummy text of the printing and typesetting industry?</p>
+            <mat-card class="card">
+              <mat-card-subtitle>
+                <div class="card-titel">
+                  Wissenswertes zum Sammeln
+                </div>
+              </mat-card-subtitle>
+              <mat-card-content>
+                <ion-row>
+                  <ion-col>
+                    <p class="card-content">
+                      Dein erster Wurmtest? Hier erklären wir dir wie du garantiert alles…
+                    </p>
+                  </ion-col>
+                  <ion-col size="1" class="card-icon">
+                    <ion-icon name="arrow-dropright"></ion-icon>
+                  </ion-col>
+                </ion-row>
+              </mat-card-content>
+  
+              <mat-card-actions class="card-action">
+                <a mat-button>mehr lesen</a>
+              </mat-card-actions>
+            </mat-card>
+            <mat-card class="card">
+              <mat-card-subtitle>
+                <div class="card-titel">
+                  Wissenswertes zum Sammeln
+                </div>
+              </mat-card-subtitle>
+              <mat-card-content>
+                <ion-row>
+                  <ion-col>
+                    <p class="card-content">
+                      Dein erster Wurmtest? Hier erklären wir dir wie du garantiert alles…
+                    </p>
+                  </ion-col>
+                  <ion-col size="1" class="card-icon">
+                    <ion-icon name="arrow-dropright"></ion-icon>
+                  </ion-col>
+                </ion-row>
+              </mat-card-content>
+  
+              <mat-card-actions class="card-action">
+                <a mat-button>mehr lesen</a>
+              </mat-card-actions>
+            </mat-card>
+          </div>
+      
+     </div>
+    </mat-step>
+      <!--/Step1-->
 
-            <mat-card-actions style="margin-top: -30px;">
-              <a mat-button>Learn more</a>
-            </mat-card-actions>
-          </mat-card>
-        </div>
-      </mat-step>
-      <mat-step state="ok" style="    box-shadow: 58px -26px 52px #fff;">
-        <ng-template matStepLabel>
-          <p class="title">
-            Probenbox im Labor
-          </p>
+      <!--Step2-->
+      <mat-step state="ok" class="step">
+        <ng-template matStepLabel >
+          <div class="title" (click)="ScrollToTop()">
+             Probenbox im Labor 
+             <div class="mini-titel">
+                2. Mai 2019
+              </div>
+          </div>
+          
         </ng-template>
-        <p class="paragraphe-style">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
-        </p>
-        <div class="timeline-marker">
-          <ion-icon name="information" class="icon-style"></ion-icon>
+        <div class="paragraphe-style">
+          Du hast Probenbox WTBH0110ALLK aktiviert und mit Rocco verknüpft.
         </div>
-        <p class=" timeline-title"> Lorem Ipsum is simply dummy text of the printing and typesetting industry:</p>
+        <div class="stepper-marker">
+          <ion-icon name="star" class="icon-style"></ion-icon>
+        </div>
+        <p class="stepper-title">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry:
+        </p>
         <p class="paragraphe-style">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
         </p>
         <ion-grid>
           <ion-row>
             <ion-col size="6">
-              <mat-form-field appearance="outline" style="width: 80%;">
-                <mat-label>Kg</mat-label>
-                <input matInput placeholder="dd/mm/yy">
-                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              <mat-form-field appearance="outline" class="input-style">
+                <mat-label>kg</mat-label>
+                <input matInput placeholder="kg">
+                <mat-icon matSuffix class="input-icons">sentiment_very_satisfied</mat-icon>
               </mat-form-field>
             </ion-col>
             <ion-col size="6">
-              <mat-form-field appearance="outline" style="width: 80%;">
-                <mat-label>Outline form field</mat-label>
+              <mat-form-field appearance="outline" class="input-style">
+                <mat-label>Date</mat-label>
                 <input matInput placeholder="dd/mm/yy">
-                <mat-icon matSuffix>calendar_today</mat-icon>
+                <mat-icon matSuffix class="input-icons">calendar_today</mat-icon>
               </mat-form-field>
             </ion-col>
           </ion-row>
-          <ion-button expand="block" style="margin-top: -20px;">Hinteriegen</ion-button>
+          <ion-button expand="block" class="btn-primary">Hinteriegen</ion-button>
         </ion-grid>
-
-        <mat-card style="margin-top: 20px;">
+        <!--cards-->
+        <mat-card class="card">
           <mat-card-subtitle>
-            <b>Lorem Ipsum has been the industry</b>
+            <div class="card-titel">
+              Wissenswertes zum Sammeln
+            </div>
           </mat-card-subtitle>
           <mat-card-content>
             <ion-row>
-              <ion-col style="margin-top: -10px;">
-                <p class="paragraphe-style">
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+              <ion-col>
+                <p class="card-content">
+                  Dein erster Wurmtest? Hier erklären wir dir wie du garantiert alles…
                 </p>
               </ion-col>
-              <ion-col size="1">
-                <ion-icon name="arrow-dropright" style="margin-top: 10px;font-size:25px;"></ion-icon>
+              <ion-col size="1" class="card-icon">
+                <ion-icon name="arrow-dropright"></ion-icon>
               </ion-col>
             </ion-row>
           </mat-card-content>
 
-          <mat-card-actions style="margin-top: -30px;">
-            <a mat-button>Learn more</a>
+          <mat-card-actions class="card-action">
+            <a mat-button>mehr lesen</a>
           </mat-card-actions>
         </mat-card>
-        <mat-card style="margin-top: 20px;">
+        <mat-card class="card">
           <mat-card-subtitle>
-            <b>Lorem Ipsum has been the industry</b>
+            <div class="card-titel">
+              Wissenswertes zum Sammeln
+            </div>
           </mat-card-subtitle>
           <mat-card-content>
             <ion-row>
-              <ion-col style="margin-top: -10px;">
-                <p class="paragraphe-style">
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+              <ion-col>
+                <p class="card-content">
+                  Dein erster Wurmtest? Hier erklären wir dir wie du garantiert alles…
                 </p>
               </ion-col>
-              <ion-col size="1">
-                <ion-icon name="arrow-dropright" style="margin-top: 10px;font-size:25px;"></ion-icon>
+              <ion-col size="1" class="card-icon">
+                <ion-icon name="arrow-dropright"></ion-icon>
               </ion-col>
             </ion-row>
           </mat-card-content>
 
-          <mat-card-actions style="margin-top: -30px;">
-            <a mat-button>Learn more</a>
+          <mat-card-actions class="card-action">
+            <a mat-button>mehr lesen</a>
           </mat-card-actions>
         </mat-card>
-        <mat-card style="margin-top: 20px;">
+        <mat-card class="card">
           <mat-card-subtitle>
-            <b>Lorem Ipsum has been the industry</b>
+            <div class="card-titel">
+              Wissenswertes zum Sammeln
+            </div>
           </mat-card-subtitle>
           <mat-card-content>
             <ion-row>
-              <ion-col style="margin-top: -10px;">
-                <p class="paragraphe-style">
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+              <ion-col>
+                <p class="card-content">
+                  Dein erster Wurmtest? Hier erklären wir dir wie du garantiert alles…
                 </p>
               </ion-col>
-              <ion-col size="1">
-                <ion-icon name="arrow-dropright" style="margin-top: 10px;font-size:25px;"></ion-icon>
+              <ion-col size="1" class="card-icon">
+                <ion-icon name="arrow-dropright"></ion-icon>
               </ion-col>
             </ion-row>
           </mat-card-content>
 
-          <mat-card-actions style="margin-top: -30px;">
-            <a mat-button>Learn more</a>
+          <mat-card-actions class="card-action">
+            <a mat-button>mehr lesen</a>
           </mat-card-actions>
         </mat-card>
+        <!--/cards-->
       </mat-step>
-      <mat-step label="Step 2" state="ok">
-        <ng-template matStepLabel style="    box-shadow: 58px -26px 52px #fff;">here we go </ng-template>
-        <mat-card>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-          text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-          book
-        </mat-card>
+      <!--/Step2-->
+
+      <!--Step3-->
+      <mat-step state="ok">
+          <ng-template matStepLabel>
+              <div class="title">
+                Result
+              </div>
+            </ng-template>
+        <mat-card class="card">
+            <mat-card-subtitle >
+              <div class="card-titel">
+                  Wissenswertes zum Sammeln
+              </div>
+            </mat-card-subtitle>
+            <mat-card-content>
+              <ion-row>
+                <ion-col >
+                  <p class="card-content">
+                      Dein erster Wurmtest? Hier erklären wir dir wie du garantiert alles…
+                  </p>
+                </ion-col>
+                <ion-col size="1" class="card-icon">
+                  <ion-icon name="arrow-dropright" ></ion-icon>
+                </ion-col>
+              </ion-row>
+            </mat-card-content>
+
+            <mat-card-actions class="card-action">
+              <a mat-button>mehr lesen</a>
+            </mat-card-actions>
+          </mat-card>
       </mat-step>
+      <!--/Step3-->
+
+      <!--Steps-icons -->
       <ng-template matStepperIcon="ok">
         <mat-icon>view_headline</mat-icon>
       </ng-template>
-
+      <!--/Steps-icons -->
     </mat-vertical-stepper>
-
+    
+  <!--/Material vertical stepper-->
   </ion-grid>
 
 </ion-content>

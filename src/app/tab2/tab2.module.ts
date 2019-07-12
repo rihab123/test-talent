@@ -17,4 +17,6 @@ import { MaterialModule } from '../material.module';
   ],
   declarations: [Tab2Page]
 })
-export class Tab2PageModule {}
+export class Tab2PageModule {
+
+}

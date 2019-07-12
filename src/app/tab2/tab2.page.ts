@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator, MatTableDataSource, MatSort } from '@angular/material';
 import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
+import { IonContent } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab2',
@@ -11,11 +12,15 @@ import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
 })
 export class Tab2Page {
   
+  @ViewChild(IonContent) content: IonContent;
+  dummyList:any;
  
   constructor( ) { }
  
   ngOnInit() {
     
   }
- 
+  ScrollToTop(){
+    this.content.scrollToTop(1500);
+  }
 }
